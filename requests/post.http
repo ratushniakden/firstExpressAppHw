@@ -1,0 +1,17 @@
+POST http://localhost:3000/signup
+Content-type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "Testovich",
+  "email": "testsad@1.gmail.com",
+  "message": "This is my first message"
+}
+
+
+POST http://localhost:3000/message
+Content-type: application/json
+
+{
+  "message": "hello there"
+}

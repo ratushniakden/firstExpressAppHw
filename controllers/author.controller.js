@@ -16,8 +16,11 @@ module.exports.signUpAuthor = (req, res) => {
       id: authors.size,
       ...body,
     };
-
     authors.set(newAuthor.email, newAuthor);
     res.status(201).send(newAuthor);
   }
+};
+
+module.exports.getAuthors = (req, res) => {
+  res.send([...authors.values()]);
 };
