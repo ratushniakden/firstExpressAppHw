@@ -1,0 +1,10 @@
+GET http://localhost:3000/author
+Content-type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "Testovich",
+    "eamil": "test@test.gmail.com",
+    "message": "This is first test message",
+    "date": "2020-11-12"
+}
